@@ -2,12 +2,12 @@ h2{
     color: crimson;
 }
 
-li > time{
+li *{
     background-color: blue;
  }
 
 
-em, strong{
+address em, address strong{
     color: blue;
 }
 dd *{
