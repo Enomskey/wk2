@@ -1,117 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forms</title>
-</head>
-<body>
+    <link rel="stylesheet" href="./forms.css">
+  </head>
+  <body>
     <main>
-        <h1>Create Account</h1>
-        <form>
+      <h1>Create Account</h1>
+      <form>
+        <ul>
+          <li>
+            <label for="fname">full name</label>
+            <input
+              type="text"
+              name="firstname"
+              id="fname"
+              placeholder="sylvester"
+            />
+          </li>
 
-            <ul>
-                <li><label for="fname">full name</label>
-                    <input type="text" name="firstname" id="fname" placeholder="sylvester">
-                </li>
-                
-                <li><label for="dob">date of birth</label>
-                    <input type="date" name="dob" id="dob">
-                </li> <br>
-                        
-                <li><label for="address">home address</label>
-                    <input type="text" name="address" id="address">
-                </li>
-                <li><p>gender</p>
-                    <input type="radio" name="gender" id="male">
-                    <label for="male">male</label>
+          <li>
+            <label for="dob">date of birth</label>
+            <input type="date" name="dob" id="dob" />
+          </li>
+          <br />
+          <li>
+            <label for="password">Enter your password</label>
+            <input type="password" name="password" id="password">
+          </li>
+          <br>
+          <li>
+            <label for="address">home address</label>
+            <input type="text" name="address" id="address" />
+          </li>
+          <li>
+            <p>gender</p>
+            <input type="radio" name="gender" id="male" />
+            <label for="male">male</label>
 
-                    <input type="radio" name="gender" id="female">
-                    <label for="female">female</label>
+            <input type="radio" name="gender" id="female" />
+            <label for="female">female</label>
 
-                    <input type="radio" name="gender" id="none">
-                    <label for="none">none</label>
+            <input type="radio" name="gender" id="none" />
+            <label for="none">none</label>
+          </li>
+          <br />
+          <li>
+            <p>marital status</p>
+            <input type="radio" name="marital status" id="married" />
+            <label for="married">married</label>
 
-                </li> <br>
-                    <li><p>marital status</p>
-                        <input type="radio" name="marital status" id="married">
-                        <label for="married">married</label>
+            <input type="radio" name="marital status" id="single" />
+            <label for="single">single</label>
 
-                        <input type="radio" name="marital status" id="single">
-                        <label for="single">single</label>
+            <input type="radio" name="marital status" id="divorce" />
+            <label for="divorce">divorce</label>
 
-                        <input type="radio" name="marital status" id="divorce">
-                        <label for="divorce">divorce</label>
+            <input type="radio" name="marital status" id="widowed" />
+            <label for="widowed">widowed</label>
+          </li>
+          <br />
+          <li>
+            <label for="Email">email adress</label>
+            <input
+              type="email"
+              name=""
+              id="Email"
+              placeholder="enter your email address"
+              required
+            />
+          </li>
+          <br />
+          
+          <li>
+            <span>state of origin</span> <br />
+            <select>
+              <optgroup label="south west">
+                <option value="lg">lagos</option>
+                <option value="og">ogun</option>
+                <option value="os">osun</option>
+                <option value="ek">ekiti</option>
+                <option value="oy">oyo</option>
+              </optgroup>
 
-                        <input type="radio" name="marital status" id="widowed">
-                        <label for="widowed">widowed</label>
-                    </li> <br>
-                <li>
-                    <label for="Email">email adress</label>
-                    <input type="email" name="" id="Email" placeholder="enter your email address" required>
-                </li> <br>
+              <optgroup label="south east">
+                <option value="an" selected>anambra</option>
+                <option value="im">imo</option>
+                <option value="ab">abia</option>
+                <option value="en">enugu</option>
+                <option value="en">delta</option>
+              </optgroup>
 
-                <li>
-                    <span>state of origin</span> <br>
-                    <select>
-                        <optgroup label="south west">
-                            <option value="lg">lagos</option>
-                            <option value="og">ogun</option>
-                            <option value="os">osun</option>
-                            <option value="ek">ekiti</option>
-                            <option value="oy">oyo</option>
+              <optgroup label="north central">
+                <option value="kg" selected>kogi</option>
+                <option value="im">plateuu</option>
+                <option value="bn">benue</option>
+                <option value="ns">nassaraw</option>
+                <option value="ng">niger</option>
+              </optgroup>
+            </select>
+          </li>
+      
+          
+          <li>
+            <p>Local phone numbers only</p>
+            <label for="telephone number">telephone number</label>
+            <input
+              type="tel"
+              name="telephone number"
+              id="telephone number"
+              placeholder="08055881866"
+              required
+            />
+          </li>
+          <br />
+          <li>
+            <input type="checkbox" name="accept" id="accept" />
+            <label for="accept">accept terms &amp;conditions</label>
 
+            <input type="checkbox" name="accept2" id="accept2" />
+            <label for="accept2">subscribe to our weekly newsletter</label>
+          </li>
+       
+          <br />
+          <!-- <div>
+          <li>
+            <input type="button" value="submit" />
+          </li>
+        </ul>
+      </div> -->
+      <button>
+        CLICK TO SUBMIT
+      </button>
+      <button  id="member">
+        ALREADY A MEMBER CLICK HERE
+      </button>
+      
+      <h2>Terms and conditions</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quisquam ab soluta excepturi itaque necessitatibus iure autem perferendis nostrum ex ullam, illo sed laudantium animi iste facere? Deserunt, vel porro?
+        Id minima dolorum aperiam ab, voluptate molestiae dignissimos alias, ipsam deserunt accusamus fugit nobis porro voluptatum amet pariatur qui natus, officiis a odio consectetur sint animi asperiores illo repellendus. Veniam!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quisquam ab soluta excepturi itaque necessitatibus iure autem perferendis nostrum ex ullam, illo sed laudantium animi iste facere? Deserunt, vel porro?
+        Id minima dolorum aperiam ab, voluptate molestiae dignissimos alias, ipsam deserunt accusamus fugit nobis porro voluptatum amet pariatur qui natus, officiis a odio consectetur sint animi asperiores illo repellendus. Veniam!
+      </p>
+      
 
-                        </optgroup>
-                        
-                        <optgroup label="south east">
-                         
-                        <option value="an" selected>anambra</option>
-                        <option value="im">imo</option>
-                        <option value="ab">abia</option>
-                        <option value="en">enugu</option>
-                        <option value="en">delta</option>
+     
+      <h2>Terms and conditions</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quisquam ab soluta excepturi itaque necessitatibus iure autem perferendis nostrum ex ullam, illo sed laudantium animi iste facere? Deserunt, vel porro?
+        Id minima dolorum aperiam ab, voluptate molestiae dignissimos alias, ipsam deserunt accusamus fugit nobis porro voluptatum amet pariatur qui natus, officiis a odio consectetur sint animi asperiores illo repellendus. Veniam!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quisquam ab soluta excepturi itaque necessitatibus iure autem perferendis nostrum ex ullam, illo sed laudantium animi iste facere? Deserunt, vel porro?
+        Id minima dolorum aperiam ab, voluptate molestiae dignissimos alias, ipsam deserunt accusamus fugit nobis porro voluptatum amet pariatur qui natus, officiis a odio consectetur sint animi asperiores illo repellendus. Veniam!
+      </p>
+     
+      <h2>Terms and conditions</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quisquam ab soluta excepturi itaque necessitatibus iure autem perferendis nostrum ex ullam, illo sed laudantium animi iste facere? Deserunt, vel porro?
+        Id minima dolorum aperiam ab, voluptate molestiae dignissimos alias, ipsam deserunt accusamus fugit nobis porro voluptatum amet pariatur qui natus, officiis a odio consectetur sint animi asperiores illo repellendus. Veniam!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quisquam ab soluta excepturi itaque necessitatibus iure autem perferendis nostrum ex ullam, illo sed laudantium animi iste facere? Deserunt, vel porro?
+        Id minima dolorum aperiam ab, voluptate molestiae dignissimos alias, ipsam deserunt accusamus fugit nobis porro voluptatum amet pariatur qui natus, officiis a odio consectetur sint animi asperiores illo repellendus. Veniam!
+      </p>
+      
+      <h2>Terms and conditions</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quisquam ab soluta excepturi itaque necessitatibus iure autem perferendis nostrum ex ullam, illo sed laudantium animi iste facere? Deserunt, vel porro?
+        Id minima dolorum aperiam ab, voluptate molestiae dignissimos alias, ipsam deserunt accusamus fugit nobis porro voluptatum amet pariatur qui natus, officiis a odio consectetur sint animi asperiores illo repellendus. Veniam!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quisquam ab soluta excepturi itaque necessitatibus iure autem perferendis nostrum ex ullam, illo sed laudantium animi iste facere? Deserunt, vel porro?
+        Id minima dolorum aperiam ab, voluptate molestiae dignissimos alias, ipsam deserunt accusamus fugit nobis porro voluptatum amet pariatur qui natus, officiis a odio consectetur sint animi asperiores illo repellendus. Veniam!
+      </p>
+      
+      <h2>Terms and conditions</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quisquam ab soluta excepturi itaque necessitatibus iure autem perferendis nostrum ex ullam, illo sed laudantium animi iste facere? Deserunt, vel porro?
+        Id minima dolorum aperiam ab, voluptate molestiae dignissimos alias, ipsam deserunt accusamus fugit nobis porro voluptatum amet pariatur qui natus, officiis a odio consectetur sint animi asperiores illo repellendus. Veniam!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quisquam ab soluta excepturi itaque necessitatibus iure autem perferendis nostrum ex ullam, illo sed laudantium animi iste facere? Deserunt, vel porro?
+        Id minima dolorum aperiam ab, voluptate molestiae dignissimos alias, ipsam deserunt accusamus fugit nobis porro voluptatum amet pariatur qui natus, officiis a odio consectetur sint animi asperiores illo repellendus. Veniam!
+      </p>
+      
+      <h2>Terms and conditions</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quisquam ab soluta excepturi itaque necessitatibus iure autem perferendis nostrum ex ullam, illo sed laudantium animi iste facere? Deserunt, vel porro?
+        Id minima dolorum aperiam ab, voluptate molestiae dignissimos alias, ipsam deserunt accusamus fugit nobis porro voluptatum amet pariatur qui natus, officiis a odio consectetur sint animi asperiores illo repellendus. Veniam!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quisquam ab soluta excepturi itaque necessitatibus iure autem perferendis nostrum ex ullam, illo sed laudantium animi iste facere? Deserunt, vel porro?
+        Id minima dolorum aperiam ab, voluptate molestiae dignissimos alias, ipsam deserunt accusamus fugit nobis porro voluptatum amet pariatur qui natus, officiis a odio consectetur sint animi asperiores illo repellendus. Veniam!
+      </p>
+      
+      <h2>Terms and conditions</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quisquam ab soluta excepturi itaque necessitatibus iure autem perferendis nostrum ex ullam, illo sed laudantium animi iste facere? Deserunt, vel porro?
+        Id minima dolorum aperiam ab, voluptate molestiae dignissimos alias, ipsam deserunt accusamus fugit nobis porro voluptatum amet pariatur qui natus, officiis a odio consectetur sint animi asperiores illo repellendus. Veniam!
+      </p>
+      
+      <div id="one">
+      <h2>Terms and conditions</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quisquam ab soluta excepturi itaque necessitatibus iure autem perferendis nostrum ex ullam, illo sed laudantium animi iste facere? Deserunt, vel porro?
+        Id minima dolorum aperiam ab, voluptate molestiae dignissimos alias, ipsam deserunt accusamus fugit nobis porro voluptatum amet pariatur qui natus, officiis a odio consectetur sint animi asperiores illo repellendus. Veniam!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quisquam ab soluta excepturi itaque necessitatibus iure autem perferendis nostrum ex ullam, illo sed laudantium animi iste facere? Deserunt, vel porro?
+        Id minima dolorum aperiam ab, voluptate molestiae dignissimos alias, ipsam deserunt accusamus fugit nobis porro voluptatum amet pariatur qui natus, officiis a odio consectetur sint animi asperiores illo repellendus. Veniam!
+      </p>
+      </div>
 
-                    </optgroup> 
-                   
-                
-                    <optgroup label="north central">
-                         
-                        <option value="kg" selected>kogi</option>
-                        <option value="im">plateuu</option>
-                        <option value="bn">benue</option>
-                        <option value="ns">nassaraw</option>
-                        <option value="ng">niger</option>
-
-                    </optgroup>
-                   
-                
-                </select>
-                </li>
-                <li>
-                    <label for="telephone number">telephone number</label>
-                    <input type="tel" name="telephone number" id="telephone number" placeholder="08055881866" required>
-                </li> <br>
-                <li>
-                    <input type="checkbox" name="accept" id="accept">
-                    <label for="accept">accept terms &amp;conditions</label>
-
-                    <input type="checkbox" name="accept2" id="accept2">
-                    <label for="accept2">subscribe to our weekly newsletter</label>
-                    
+      <div id="two">
+      <h2>Terms and conditions</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quisquam ab soluta excepturi itaque necessitatibus iure autem perferendis nostrum ex ullam, illo sed laudantium animi iste facere? Deserunt, vel porro?
+        Id minima dolorum aperiam ab, voluptate molestiae dignissimos alias, ipsam deserunt accusamus fugit nobis porro voluptatum amet pariatur qui natus, officiis a odio consectetur sint animi asperiores illo repellendus. Veniam!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quisquam ab soluta excepturi itaque necessitatibus iure autem perferendis nostrum ex ullam, illo sed laudantium animi iste facere? Deserunt, vel porro?
+        Id minima dolorum aperiam ab, voluptate molestiae dignissimos alias, ipsam deserunt accusamus fugit nobis porro voluptatum amet pariatur qui natus, officiis a odio consectetur sint animi asperiores illo repellendus. Veniam!
         
-                </li> <br>
-                <li>
-                    <input type="button" value="submit" >
-                    
-                </li>
-            </ul>
-        
-           
-        </form>
+      </p>
+      </div>
+    
+
+
+      </form>
+
 
     </main>
-    
-    
-</body>
+  </body>
 </html>

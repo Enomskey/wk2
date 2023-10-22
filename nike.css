@@ -1,0 +1,156 @@
+.logo{
+    width: 24px;
+    height: 24px;
+}
+
+.logo-2{
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+}
+
+#navbar-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+    background-color: #f5f5f5;
+}
+
+#navbar-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* border: 1px solid black; */
+   
+}
+
+#navbar-2-logo, .navbar-2-links, #search-links{
+    width:50px;
+    /* align-content: center; */
+    /* border: 1px solid red; */
+   
+    
+    
+}
+
+
+.margin{
+    
+    padding-right: 50px;
+    padding-left: 50px;
+    
+}
+#links a{
+    text-decoration: none;
+    color: rgb(40, 40, 40);
+}
+
+#navbar-2-links a{
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: larger;
+    /* border: 1px solid green; */
+}
+
+#search-links{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#search{
+    height: 30px;
+    border-radius: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 15px;
+}
+
+#navbar-3{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f5f5f5;
+    padding: 10px;
+}
+
+#navbar-3 h4, #navbar-3 h6{
+    margin: 0;
+}
+
+  #image-cards{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #member-days-sale{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #member-days-sales, span{
+    background-color: lightpink;
+
+  }
+
+    #member-days-sales-2{
+        height: 50px;
+        width: 100;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  #image-cards img{
+    width: 32%;
+    border-radius: 15px;
+    border: 1px solid grey;
+  }
+
+  #additional-text{
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+  }
+
+  .small-text, .big-text{
+    margin: 0;
+    padding:5px;
+
+  }
+  .big-text{
+    font-size: 30px;
+    font-weight: bold;
+  }
+  button{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+  }
+    
+    
+    
+  
+    
+
