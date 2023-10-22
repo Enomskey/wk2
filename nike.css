@@ -88,21 +88,50 @@
   }
 
   #member-days-sale{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+   display: contents;
+  justify-content: center;
+   align-content: center;
+    border: 1px solid grey;
+    
   }
 
-  #member-days-sales, span{
-    background-color: lightpink;
 
-  }
 
-    #member-days-sales-2{
-        height: 50px;
-        width: 100;
+    #member-days-sale-2{
+        text-align: left;
+        background-color: rgb(251, 221, 226);
+        padding: 0;
+        margin:0 ;
+
+        
+        
     }
+
+    #member-days-sale-2 h1{
+        font-size: 50px;
+        margin: 0;
+        padding: 0;
+    }
+
+    
+
+    #mds2-images{
+        margin-right: 50px;
+        width: auto;
+    }
+
+    #member-days-sale-2 button{
+        border-radius: 20px;
+        margin-top: 15px;
+        padding:10px 20px 10px 20px;
+        font-size:15px ;
+        background-color: rgb(28, 28, 28);
+        color: white;
+    }
+
+ 
+
+   
 
 
 
@@ -120,7 +149,7 @@
 
 
   #image-cards img{
-    width: 32%;
+    width: 31%;
     border-radius: 15px;
     border: 1px solid grey;
   }
@@ -131,6 +160,7 @@
     justify-content: center;
     align-items: center;
     margin: 30px;
+   font-size: xx-large;
   }
 
   .small-text, .big-text{
@@ -142,12 +172,25 @@
     font-size: 30px;
     font-weight: bold;
   }
-  button{
-    background-color: black;
+ #additional-text button{
+    border-radius: 20px;
+    margin-top: 15px;
+    padding:10px 20px 10px 20px;
+    font-size:15px ;
+    background-color: rgb(28, 28, 28);
     color: white;
-    padding: 10px;
-    border-radius: 50px;
-  }
+ }
+ 
+#image-cards-2{
+    display: flex;
+    justify-content: space-between;
+}
+
+#image-cards-2 img{
+    width: 31%;
+    border-radius: 15px;
+    border: 1px solid grey;
+}
     
     
     
